@@ -1,0 +1,166 @@
+div.gallery {
+  border: 1%;
+}
+
+div.gallery img {
+  width: 100%;
+  border-radius: 4%;
+  height: auto; 	
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+	padding: 0 3px;
+	float: left;
+	width: 33.3333%; 
+	position: relative;
+}
+
+div.responsive  .gallery .overlay1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 99.99%;
+  width: 99.99%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F1EADC;
+  border-radius: 4%;
+}
+div.responsive  .gallery .overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #FCC0C9;
+  border-radius: 4%;
+}
+div.responsive  .gallery .overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CE5752;
+  border-radius: 4%;
+}
+div.responsive  .gallery .overlay4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #864A40;
+  border-radius: 4%;
+}
+div.responsive  .gallery .overlay5 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4F4444;
+  border-radius: 4%;
+}
+div.responsive  .gallery .overlay6 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #949A63;
+  border-radius: 4%;
+}
+
+div.responsive .gallery:hover .overlay1 {
+  opacity: 0.7;
+}
+div.responsive .gallery:hover .overlay2 {
+  opacity: 0.7;
+}
+div.responsive .gallery:hover .overlay3 {
+  opacity: 0.7;
+}
+div.responsive .gallery:hover .overlay4 {
+  opacity: 0.7;
+}
+div.responsive .gallery:hover .overlay5 {
+  opacity: 0.7;
+}
+div.responsive .gallery:hover .overlay6 {
+  opacity: 0.7;
+}
+
+
+.text {
+  font-family:'Courgette';
+  color: #FFF;
+  font-size: 200%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+}
+
+/* Tablets ----------- */
+@media only screen and (min-width: 601px) and (max-width: 1235px){
+.responsive {
+    width: 49.99999%;
+    margin: 3px 0;
+  }
+
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width:600px){
+.responsive  {	
+	width: 100%;
+  }
+	div.responsive .gallery:hover .overlay1 {
+	display: none;
+	}
+	div.responsive .gallery:hover .overlay2 {
+	display: none;
+	}
+	div.responsive .gallery:hover .overlay3 {
+	display: none;
+	}
+	div.responsive .gallery:hover .overlay4 {
+	display: none;
+	}
+	div.responsive .gallery:hover .overlay5 {
+	display: none;
+	}
+	div.responsive .gallery:hover .overlay6 {
+	display: none;
+}
+}
